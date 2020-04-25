@@ -1,0 +1,72 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
+<div class="container">
+  <div class="header">
+    <h1 id="title">Pirates of Caribbean Survey
+    </h1>
+    <p id="description">Let us know what you think about the "Pirates of Caribbean" series!
+    </p>
+  </div>
+  <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label" for="name">Name</label>
+      <input id="name" type="text" name="name" class="form-input" placeholder="Enter Your Name" required />
+    </div>
+    <div class="form-group">
+      <label id="email-label" for="email">Email</label>
+      <input id="email" type="email" name="email" class="form-input" placeholder="Enter Yor Email" required />
+    </div>
+    <div class="form-group">
+      <label id="number-label" for="age">Age</label>
+      <input id="number" type="number" min="1" max="99" name="age" class="form-input" placeholder="Age" />
+    </div>
+    <div class="form-group">
+      <p>Which "Pirates of Caribbean" Movie is The Best?</p>
+      <select id="dropdown" name="movie" class="form-input">
+        <option desable select value>Select Best Movie</option>
+        <option value="The Curse of the Black Pearl"> July 9, 2003 - The Curse of the Black Pearl</option>
+        <option value="Dead Man's Chest">July 7, 2006 - Dead Man's Chest</option>
+        <option value="At World's End">May 25, 2007 - At World's End</option>
+        <option value="On Stranger Tides">May 20, 2011 - On Stranger Tides</option>
+        <option value="Dead Men Tell No Tales">May 26, 2017 - Dead Men Tell No Tales</option>
+      </select>
+    </div>
+    <div class="form-group-click">
+      <p>Would You Recommend The Series To Others?</p>
+      <label>
+        <input name="recommend" value="yes" type="radio" class="form-click" checked /> Yes </label>
+      <label>
+        <input name="recommend" value="Maybe" type="radio" class="form-click" /> Maybe </label>
+      <label>
+        <input name="recommend" value="No" type="radio" class="form-click" /> No </label>
+    </div>
+    <div class="form-group-checkbox">
+      <p> Whould You Like To See A Series Created For A Specific Character?</p>
+      <label>
+        <input name="character-series" value="Indifferent/No" type="checkbox" class="form-checkbox" checked /> Indifferent/No </label>
+      <label>
+        <input name="character-series" value="Hector Barbossa" type="checkbox" class="form-checkbox" /> Hector Barbossa </label>
+      <label>
+        <input name="character-series" value="Davy Jones" type="checkbox" class="form-checkbox"> Davy Jones </label>
+      <label>
+        <input name="character-series" value="Will Turner" type="checkbox" class="form-checkbox" /> Will Turner </label>
+      <label>
+        <input name="character-series" value="Elizabeth Swann" type="checkbox" class="form-checkbox" /> Elizabeth Swann </label>
+      <label>
+        <input name="character-series" value="Tia Dalma" type="checkbox" class="form-checkbox" /> Tia Dalma </label>
+      <label>
+        <input name="character-series" value="Joshamee Gibbs" type="checkbox" class="form-checkbox" /> Joshamee Gibbs </label>
+      <label>
+        <input name="character-series" value="Ragetti" type="checkbox" class="form-checkbox" /> Ragetti </label>
+    </div>
+    <div class="form-group-textbox">
+      <p> Comments or Suggestions? </p>
+      <textarea name="text-box" id="text-box" class="form-textbox" placeholder="Type Your Comments Here"></textarea>
+    </div>
+    <div class="form-group-submit">
+      <button type="submit" id="submit" class="form-submit">Submit</button>
+    </div>
+  </form>
+</div>
