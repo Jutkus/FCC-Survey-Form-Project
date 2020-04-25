@@ -1,222 +1,117 @@
-.bg {
-  background-color: #ebebeb;
-}
-a {
-  text-decoration: none;
-  color: #ffab91;
-}
-.nav-quote1:hover {
-  transform: scale(1.3);
-  line-height: 55px;
-}
-.nav-timeline:hover {
-  transform: scale(1.3);
-  line-height: 55px;
-}
-.nav-socialmedia:hover {
-  transform: scale(1.3);
-  line-height: 55px;
-}
-footer {
-  display: block;
-}
-h2 {
-  text-align: center;
+body::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  position: fixed;
+  background-image: linear-gradient(
+      45deg,
+      rgba(82, 82, 140, 0.8),
+      rgba(49, 49, 104, 0.9)
+    ),
+    url(http://getwallpapers.com/wallpaper/full/5/1/d/206452.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 .header {
-  background-color: #944654;
-  display: block;
-  width: 1030px;
-  height: 150px;
-  margin: 0 auto;
   text-align: center;
-  color: #ddd5d0;
-  border-radius: 10px;
-  box-shadow: 10px 10px 3px 5px rgba(152, 114, 132, 0.85);
-}
-#title {
-  margin: 0;
-  padding: 0;
-  font-family: "Anton", sans-serif;
-  font-size: 60px;
-  letter-spacing: 10px;
-}
-#title2 {
-  margin: 0;
-  padding: 0;
-  line-height: 5px;
-  font-family: "Anton", sans-serif;
-  letter-spacing: 2px;
-}
-nav {
-  display: flex;
-  justify-content: space-evenly;
-  margin: 0 200px;
-  padding: 0;
-  height: 0;
-  line-height: 75px;
-  font-family: "Anton", sans-serif;
   font-size: 25px;
-  letter-spacing: 2px;
+  line-height: 0.8;
+}
+#description {
+  font-size: 20px;
+  font-style: italic;
 }
 .container {
-  display: grid;
-  margin: 20px auto;
-  width: 1050px;
-  grid-template-columns: 550px 1fr;
-  grid-template-rows: 1fr 1fr 1fr auto auto;
-  grid-gap: 10px 0;
-  grid-template-areas:
-    "image quote1"
-    "image quote2"
-    "image quote3"
-    "content content"
-    "socialmedia socialmedia";
-}
-.image {
-  background-color: #944654;
-  grid-area: image;
-  border-radius: 10px;
-  margin: 10px 10px;
-  box-shadow: 10px 10px 3px 5px rgba(152, 114, 132, 0.85);
-}
-figcaption {
-  margin: 5px 10px;
-  text-align: center;
-  font-style: italic;
+  margin: 0 auto;
   color: white;
-}
-#image {
-  display: block;
-  max-width: 500px;
-  border-radius: 5px;
-  margin: 20px auto;
-}
-blockquote {
-  display: block;
-  margin: 20px 20px;
-}
-#quote1 {
-  background-color: #4b2e39;
-  grid-area: quote1;
-  border-radius: 10px;
-  margin: 10px 10px;
-  box-shadow: 10px 10px 3px 5px rgba(152, 114, 132, 0.85);
   font-family: "Bree Serif", serif;
-  font-size: 25px;
-  color: #ddd5d0;
 }
-#quote2 {
-  background-color: #4b2e39;
-  grid-area: quote2;
+form {
+  background-color: rgba(44, 44, 84, 0.8);
   border-radius: 10px;
-  margin: 10px 10px;
-  box-shadow: 10px 10px 3px 5px rgba(152, 114, 132, 0.85);
-  font-family: "Bree Serif", serif;
-  font-size: 25px;
-  color: #ddd5d0;
+  background: linear-gradient(
+    145deg,
+    rgba(40, 40, 76, 0.8),
+    rgba(47, 47, 90, 0.8)
+  );
+  box-shadow: 10px 10px 20px #242444, -10px -10px 20px #343464;
+  padding: 20px 40px;
+  margin: 60px auto;
 }
-#quote3 {
-  background-color: #4b2e39;
-  grid-area: quote3;
-  border-radius: 10px;
-  margin: 10px 10px;
-  box-shadow: 10px 10px 3px 5px rgba(152, 114, 132, 0.85);
-  font-family: "Bree Serif", serif;
+p {
   font-size: 25px;
-  color: #ddd5d0;
 }
-#tribute-info {
-  background-color: #944654;
-  grid-area: content;
-  border-radius: 10px;
-  margin: 10px 10px;
+label {
+  display: flex;
+  font-size: 25px;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.form-input {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 40px;
+}
+.form-group-click {
+  margin-bottom: 40px;
+}
+.form-group-checkbox {
+  margin-bottom: 40px;
+}
+.form-group-textbox {
+  margin-left: 0;
+  margin-right: 20px;
+  margin-bottom: 40px;
+}
+input.form-click,
+input.form-checkbox {
+  margin: 0 10px;
+  transform: scale(2);
+  transition: all 0.2s ease-in-out;
+}
+input,
+button,
+select,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+.form-textbox {
+  width: 100%;
+  min-height: 120px;
   padding: 10px;
-  box-shadow: 10px 10px 3px 5px rgba(152, 114, 132, 0.85);
-  color: #ddd5d0;
-  font-family: "Bree Serif", serif;
-  font-size: 20px;
+  resize: vertical;
+  border-radius: 5px;
 }
-li {
-  margin: 20px;
+input:hover {
+  color: rgba(90, 87, 102, 1);
+  box-shadow: 0 5px 15px rgba(166, 244, 220, 0.4);
 }
-#socialmedia {
-  background-color: #944654;
-  grid-area: socialmedia;
-  border-radius: 10px;
-  margin: 10px 10px;
-  padding: 30px;
-  box-shadow: 10px 10px 3px 5px rgba(152, 114, 132, 0.85);
-  color: #ddd5d0;
-  font-family: "Bree Serif", serif;
-  font-size: 20px;
+button:hover {
+  color: rgba(90, 87, 102, 1);
+  box-shadow: 0 5px 15px rgba(166, 244, 220, 0.4);
 }
-.insta {
-  padding: 25px;
-  text-align: center;
+button {
+  width: 100%;
+  height: 40px;
+  background-color: #85ff9e;
+  border: none;
+  border-radius: 5px;
+  transition: all 0.2s ease-in-out;
 }
-@media (max-width: 900px) {
+@media (min-width: 400px) {
   .container {
-    margin: 20px auto;
-    width: 500px;
-    grid-template-columns: 500px;
-    grid-template-rows: repeat(5, auto);
-    grid-template-areas:
-      "image"
-      "quote1"
-      "quote2"
-      "quote3"
-      "content"
-      "socialmedia";
-  }
-  .header {
-    width: 500px;
-  }
-  #image {
-    max-width: 450px;
-  }
-  #title {
-    font-size: 50px;
-    letter-spacing: 10px;
-  }
-  nav {
-    margin: 0 auto;
-    justify-content: space-evenly;
-  }
-  #main{
-    margin: 0px auto;
+    max-width: 400px;
   }
 }
-@media (max-width: 600px) {
+@media (min-width: 768px) {
   .container {
-    margin: 20px auto;
-    width: 400px;
-    grid-template-columns: 400px;
-    grid-template-rows: repeat(5, auto);
-    grid-template-areas:
-      "image"
-      "quote1"
-      "quote2"
-      "quote3"
-      "content"
-      "socialmedia";
-  }
-  .header {
-    width: 400px;
-  }
-  #image {
-    max-width: 350px;
-  }
-  #title {
-    font-size: 50px;
-    letter-spacing: 10px;
-  }
-  nav {
-    margin: 0 auto;
-    justify-content: space-evenly;
-  }
-  #main{
-    margin: 0px auto;
+    max-width: 720px;
   }
 }
-
